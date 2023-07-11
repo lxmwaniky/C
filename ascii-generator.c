@@ -8,7 +8,6 @@ int main() {
 
     printf("\nASCII Art:\n");
     for (int i = 0; text[i] != '\0'; i++) {
-        // ASCII Art patterns based on characters
         switch (text[i]) {
             case 'A':
             case 'a':
