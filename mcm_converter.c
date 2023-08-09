@@ -7,7 +7,23 @@ int main(){
     printf("Unit (m) or (c): ");
     scanf("%c", &unit);
     unit = tolower(unit);
-    if (unit == 'm'){
+    switch(unit){
+        case('m'):
+            printf("Enter value to convert to cm: ");
+            scanf("%f", &height);
+            convert = height * 100;
+            printf("New height is %.2f cm", convert);
+            break;
+        case('c'):
+            printf("Enter value to convert to m: ");
+            scanf("%f", &height);
+            convert = height / 100;
+            printf("New height is %.2f m", convert);
+            break;
+        default:
+            printf("%c is an Invalid Unit", unit);
+    }
+    /*if (unit == 'm'){
         printf("Enter value to convert to cm: ");
         scanf("%f", &height);
         convert = height * 100;
@@ -21,7 +37,7 @@ int main(){
     }
     else{
         printf("%c is an Invalid Unit", unit);
-    }
+    }*/
 
     return 0;
 }
