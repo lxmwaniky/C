@@ -10,6 +10,7 @@ int main(){
     printf("Grade: ");
     scanf("%c", &grade);
     printf("Hello, %s\n", name);
+    grade = toupper(grade);
     switch(grade){
         case('A'):
             printf("Pass");
