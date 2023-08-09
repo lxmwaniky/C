@@ -1,14 +1,15 @@
 #include <stdio.h>
-//#include <string.h>
+#include <math.h>
 
 int main(){
-    char name[25];
-    int age;
-    printf("What is your name: ");
-    fgets(name, 25, stdin);
-    name[strlen(name)-1] = '\0';
-    printf("How old are you: ");
-    scanf("%d", &age);
-    printf("Hello %s.\nYou are %d years old",name, age);
+    float A;
+    float B;
+    float C;
+    printf("Height: ");
+    scanf("%f", &A);
+    printf("Base: ");
+    scanf("%f", &B);
+    C = sqrt(A*A + B*B);
+    printf("Hypotenuse: %.2 f", C);
     return 0;
 }
