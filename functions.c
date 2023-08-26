@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int add(int a, int b){
-    int result = a + b;
-    return result;
+void numSquare(int num){
+	int square = num * num;
+	printf("The square of %d is %d", num, square);
 }
 
-int main(void){
-    int output = add(2, 5);
-    printf("%d", output);
-    return 0;
+int main(){
+	int num;
+	printf("Enter a number: ");
+	scanf("%d", &num);
+	numSquare(num);
+	return 0;
 }
-
-

@@ -1,34 +1,37 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
-    char operator;
-    float num1, num2, total;
-    printf("Enter an operator(+ - * /): ");
-    scanf("%c", &operator);
-    printf("Num1: ");
-    scanf("%f", &num1);
-    printf("Num2: ");
-    scanf("%f", &num2);
-    switch(operator){
-        case('+'):
-            total = num1 + num2;
-            printf("Answer: %.2f", total);
-            break;
-        case('-'):
-            total = num1 - num2;
-            printf("Answer: %.2f", total);
-            break;
-        case('*'):
-            total = num1 * num2;
-            printf("Answer: %.2f", total);
-            break;
-        case('/'):
-            total = num1 / num2;
-            printf("Answer: %.2f", total);
-            break;
-        default:
-            printf("%c is an invalid operator", &operator);
-    }
-    return 0;
+	int x;
+	int y;
+	int result;
+	int operator;
+	printf("Enter the First number: ");
+	scanf("%d", &x);
+	printf("Enter the Second number: ");
+	scanf("%d", &y);
+	printf("Select an operation\n1. Addition\n2. Subtraction\n3. Multipilcation\n4. Division\nEnter your Choice: ");
+	scanf("%d", &operator);
+	switch(operator){
+		case 1:
+			result = x + y;
+			printf("Result is: %d\n", result);
+			break;
+		case 2:
+			result = x - y;
+			printf("Result is: %d\n", result);
+			break;
+		case 3:
+			result = x * y;
+			printf("Result is: %d\n", result);
+			break;
+		case 4:
+			result = x / y;
+			printf("Result is: %d\n", result);
+			break;
+		default:
+			printf("Invalid operator\n");
+			break;
+	}
+	return 0;
 }
+	
