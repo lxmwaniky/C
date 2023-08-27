@@ -2,7 +2,7 @@
 
 void numSquare(int num){
 	int square = num * num;
-	printf("The square of %d is %d", num, square);
+	printf("The square of %d is %d\n", num, square);
 }
 
 int main(){
