@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main(void)
+{
     float A;
     float B;
     float C;
