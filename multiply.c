@@ -7,8 +7,6 @@
 
 int main(void)
 {
-	int product = 8 * 14 * 25;
-
-	printf("%d\n", product);
+	printf("%d\n", 8 * 14 * 25);
 	return (0);
 }
