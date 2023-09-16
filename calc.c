@@ -11,9 +11,11 @@ int main(void)
 	scanf("%d", &x);
 	printf("Enter the Second number: ");
 	scanf("%d", &y);
-	printf("Select an operation\n1. Addition\n2. Subtraction\n3. Multipilcation\n4. Division\nEnter your Choice: ");
+	printf("Select an operation\n1. Addition\n");
+	printf("2. Subtraction\n3. Multipilcation\n4.");
+	printf("Division\nEnter your Choice: ");
 	scanf("%d", &operator);
-	switch(operator)
+	switch (operator)
 	{
 		case 1:
 			result = x + y;
@@ -37,4 +39,3 @@ int main(void)
 	}
 	return (0);
 }
-	
