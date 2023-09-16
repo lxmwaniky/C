@@ -1,10 +1,14 @@
 #include <stdio.h>
+/**
+  *main - Asks for character input
+  *Return: 0
+  */
 int main(void)
 {
-	int c;
+	int ch;
 
-	printf("I'm waiting for a character: ");
-	c = getchar();
-	printf("I waited for the '%c' character.\n", c);
+	printf("Enter a character: ");
+	ch = getchar();
+	printf("You entered %c\n", ch);
 	return (0);
 }
