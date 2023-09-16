@@ -11,7 +11,7 @@ int main(void)
 	scanf("%d", &end);
 	for (int i = 0; i <= end; i++)
 	{
-		printf("%d\n", i);
+		printf("%d. Hello Friend\n", i);
 	}
 	return (0);
 }
