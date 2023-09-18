@@ -8,6 +8,6 @@ int main(void)
 {
 	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	printf("%zu", strlen(alphabet));
+	printf("%ld", strlen(alphabet));
 	return (0);
 }
