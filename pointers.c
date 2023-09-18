@@ -1,10 +1,13 @@
 #include <stdio.h>
+/**
+  *main - Pointers in c
+  *Return: 0
+  */
+int main(void)
+{
+	int age = 43;
 
-int main(void){
-    int b = 2;
-    int *a = &b;
-    printf("%d\n", b);
-    printf("%p\n", &b);
-    printf("%p\n", a);
-    return 0;
+	printf("Value - %d\n", age);
+	printf("Memory Adress of Value - %p\n", &age);
+	return (0);
 }
