@@ -5,7 +5,7 @@
   */
 int main(void)
 {
-	int age = 43;
+	int age = 18;
 
 	printf("Value - %d\n", age);
 	printf("Memory Adress of Value - %p\n", &age);
