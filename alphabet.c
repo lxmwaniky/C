@@ -11,7 +11,7 @@ int main(void)
 	{
 		printf("%c ", uppAlpha);
 	}
-	printf("\n");
+	putchar('\n');
 	for (lowAlpha = 'a'; lowAlpha <= 'z'; lowAlpha++)
 	{
 		printf("%c ", lowAlpha);
