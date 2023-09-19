@@ -9,12 +9,11 @@ int main(void)
 
 	for (uppAlpha = 'A'; uppAlpha <= 'Z'; uppAlpha++)
 	{
-		printf("%c ", uppAlpha);
-	}
-	putchar('\n');
-	for (lowAlpha = 'a'; lowAlpha <= 'z'; lowAlpha++)
-	{
-		printf("%c ", lowAlpha);
+		for (lowAlpha = 'a'; lowAlpha <= 'z'; lowAlpha++)
+		{
+			printf("%c %c\t", uppAlpha, lowAlpha);
+		}
+		putchar('\n');
 	}
 	return (0);
 }
