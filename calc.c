@@ -2,10 +2,7 @@
 
 int main(void)
 {
-	int x;
-	int y;
-	int result;
-	int operator;
+	int x, y, result, operator;
 
 	printf("Enter the First number: ");
 	scanf("%d", &x);
