@@ -1,38 +1,37 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-	int x, y, result, operator;
+	int x, y, result;
+	char operator;
 
-	printf("Enter the First number: ");
+	printf("Enter a 1st number: ");
 	scanf("%d", &x);
-	printf("Enter the Second number: ");
+	printf("Enter a 2nd number: ");
 	scanf("%d", &y);
-	printf("Select an operation\n1. Addition\n");
-	printf("2. Subtraction\n3. Multipilcation\n4.");
-	printf("Division\nEnter your Choice: ");
-	scanf("%d", &operator);
-	switch (operator)
+	printf("Choose an Operator(+, *, /, -): ");
+	scanf(" %c", &operator);
+	switch(operator)
 	{
-		case 1:
+		case '+':
 			result = x + y;
-			printf("Result is: %d\n", result);
+			printf("%d %c %d = %d", x, operator, y, result);
 			break;
-		case 2:
+		case '-':
 			result = x - y;
-			printf("Result is: %d\n", result);
+			printf("%d %c %d = %d", x, operator, y, result);
 			break;
-		case 3:
+		case '*':
 			result = x * y;
-			printf("Result is: %d\n", result);
+			printf("%d %c %d = %d", x, operator, y, result);
 			break;
-		case 4:
+		case '/':
 			result = x / y;
-			printf("Result is: %d\n", result);
+			printf("%d %c %d = %d", x, operator, y, result);
 			break;
 		default:
-			printf("Invalid operator\n");
+			printf("Invalid Operator\n");
 			break;
 	}
-	return (0);
+	return 0;
 }
