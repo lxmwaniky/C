@@ -1,14 +1,46 @@
 #include <stdio.h>
-/**
-  *main - Does the Math
-  *Return: 0
-  */
-int main(void)
+
+void basic_maths();
+void complex_maths();
+
+int main()
 {
-	puts("Values 8 and 2:");
-	printf("Addition is %d\n", 8 + 2);
-	printf("Subtraction is %d\n", 8 - 2);
-	printf("Multiplication is %d\n", 8 * 2);
-	printf("Division is %d\n", 8 / 2);
-	return (0);
+	int mode;
+
+	puts("........................CALCULATOR................................");
+	puts("..................................................................");
+	printf("1. Basic Maths\n2. Complex Maths\n");
+	printf("Enter mode:  ");
+	scanf("%d", &mode);
+	while (1)
+	{
+		if (mode == 1)
+		{
+			basic_maths();
+			break;
+		}
+		else if (mode == 2)
+		{
+			complex_maths();
+			break;
+		}
+		else
+		{
+			printf("Enter a Valid mode: ");
+			scanf("%d", &mode);
+		}
+	}
+
+
+	return 0;
+}
+
+void basic_maths()
+{
+	printf("You selected Basic Maths\n");
+}
+
+void complex_maths()
+{
+	printf("You selected Complex Maths\n");
 }
