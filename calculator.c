@@ -93,7 +93,7 @@ void complex_maths()
 	double num, result;
 
 	printf(".....................Complex Maths..........................\n");
-	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric functions\n");
+	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n");
 	printf("Choose a function: ");
 	scanf("%d", &method);
 	switch (method)
@@ -129,6 +129,9 @@ void complex_maths()
 			scanf("%d", &power);
 			result = pow(num, power);
 			printf("%.2lf raised to the power of %d is %.2lf\n", num, power, result);
+			break;
+		default:
+			printf("Invalid function\n");
 			break;
 	}
 }
