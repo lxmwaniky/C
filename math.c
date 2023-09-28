@@ -41,7 +41,7 @@ void basic_maths()
 	int operator;
 	double x, y;
 
-	puts(".........Basic Maths.........");
+	puts("..........................Basic Maths....................");
 	printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulo\n");
 	printf("Choose an Operator: ");
 	scanf("%d", &operator);
@@ -88,5 +88,6 @@ void basic_maths()
 
 void complex_maths()
 {
-	printf("You selected Complex Maths\n");
+	printf(".....................Complex Maths..........................\n");
+	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric functions\n");
 }
