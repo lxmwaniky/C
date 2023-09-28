@@ -77,7 +77,7 @@ void basic_maths()
 			}
 			else
 			{
-				printf("Math Error\n");
+				printf("Denominator must be less then numerator and not equal to zero\n");
 			}
 			break;
 		default:
