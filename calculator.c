@@ -88,6 +88,45 @@ void basic_maths()
 
 void complex_maths()
 {
+	int method, power;
+	double num, result;
+
 	printf(".....................Complex Maths..........................\n");
 	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric functions\n");
+	puts("Choose a method: ");
+	switch (method)
+	{
+		case 1:
+			printf("Enter a number to SquareRoot: ");
+			scanf("%lf", &num);
+			result = sqrt(num);
+			printf("The SquareRoot of %.2lf is %.2lf\n", num, result);
+			break;
+		case 2:
+			printf("Enter a number to CubeRoot: ");
+			scanf("%lf", &num);
+			result = cbrt(num);
+			printf("The CubeRoot of %.2lf is %.2lf\n", num, result);
+			break;
+		case 3:
+			printf("Enter a number to Square: ");
+			scanf("%lf", &num);
+			result = num * num;
+			printf("The Square of %.2lf is %.2lf\n", num, result);
+			break;
+		case 4:
+			printf("Enter a number to Cube: ");
+			scanf("%lf", &num);
+			result = num * num * num;
+			printf("The Cube of %.2lf is %.2lf\n", num, result);
+			break;
+		case 5:
+			printf("Enter a number: ");
+			scanf("%lf", &num);
+			printf("Enter the power: ");
+			scanf("%d", &power);
+			result = pow(num, power);
+			printf("%.2lf raised to the power of %d is %.2lf\n", num, power, result);
+			break;
+	}
 }
