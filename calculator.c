@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void basic_maths();
 void complex_maths();
