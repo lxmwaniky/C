@@ -94,7 +94,8 @@ void complex_maths()
 
 	printf(".....................Complex Maths..........................\n");
 	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric functions\n");
-	puts("Choose a method: ");
+	printf("Choose a function: ");
+	scanf("%d", &method);
 	switch (method)
 	{
 		case 1:
