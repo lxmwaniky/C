@@ -3,6 +3,7 @@
 
 void basic_maths();
 void complex_maths();
+void trigonometry();
 
 int main()
 {
@@ -43,6 +44,8 @@ void basic_maths()
 	double x, y;
 
 	puts("..........................Basic Maths....................");
+	puts(".........................................................");
+	putchar('\n');
 	printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulo\n");
 	printf("Choose an Operator: ");
 	scanf("%d", &operator);
@@ -92,8 +95,10 @@ void complex_maths()
 	int method, power;
 	double num, result;
 
-	printf(".....................Complex Maths..........................\n");
-	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n");
+	puts(".....................Complex Maths..........................");
+	puts("............................................................");
+	putchar('\n');
+	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric Functions\n");
 	printf("Choose a function: ");
 	scanf("%d", &method);
 	switch (method)
@@ -130,8 +135,15 @@ void complex_maths()
 			result = pow(num, power);
 			printf("%.2lf raised to the power of %d is %.2lf\n", num, power, result);
 			break;
+		case 6:
+			trigonometry();
+			break;
 		default:
 			printf("Invalid function\n");
 			break;
 	}
+}
+void trigonometry()
+{
+	printf("Hello World\n");
 }
