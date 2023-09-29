@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <unistd.h>
 
 void basic_maths();
 void complex_maths();
@@ -11,6 +12,7 @@ int main()
 
 	puts("........................CALCULATOR................................");
 	puts("..................................................................");
+	sleep(1);
 	putchar('\n');
 	printf("1. Basic Maths\n2. Complex Maths\n");
 	printf("Enter mode:  ");
@@ -19,11 +21,13 @@ int main()
 	{
 		if (mode == 1)
 		{
+			sleep(0.5);
 			basic_maths();
 			break;
 		}
 		else if (mode == 2)
 		{
+			sleep(0.5);
 			complex_maths();
 			break;
 		}
@@ -45,10 +49,12 @@ void basic_maths()
 
 	puts("..........................Basic Maths....................");
 	puts(".........................................................");
+	sleep(0.5);
 	putchar('\n');
 	printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulo\n");
 	printf("Choose an Operator: ");
 	scanf("%d", &operator);
+	sleep(0.3);
 	printf("Enter 1st Value: ");
 	scanf("%lf", &x);
 	printf("Enter 2nd Value: ");
@@ -97,6 +103,7 @@ void complex_maths()
 
 	puts(".....................Complex Maths..........................");
 	puts("............................................................");
+	sleep(0.5);
 	putchar('\n');
 	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric Functions\n");
 	printf("Choose a function: ");
