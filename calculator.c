@@ -10,8 +10,8 @@ int main()
 {
 	int mode;
 
-	puts("........................CALCULATOR................................");
-	puts("..................................................................");
+	puts("                          ........................CALCULATOR................................");
+	puts("..................................................................................................................");
 	sleep(1);
 	putchar('\n');
 	printf("1. Basic Maths\n2. Complex Maths\n");
@@ -47,8 +47,8 @@ void basic_maths()
 	int operator;
 	double x, y;
 
-	puts("..........................Basic Maths....................");
-	puts(".........................................................");
+	puts("                   ..........................Basic Maths....................");
+	puts("...........................................................................................................................");
 	sleep(0.5);
 	putchar('\n');
 	printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulo\n");
@@ -101,8 +101,8 @@ void complex_maths()
 	int method, power;
 	double num, result;
 
-	puts(".....................Complex Maths..........................");
-	puts("............................................................");
+	puts("                       .....................Complex Maths..........................");
+	puts("...................................................................................................");
 	sleep(0.5);
 	putchar('\n');
 	printf("1. SquareRoot\n2. CubeRoot\n3. Square\n4. Cube\n5. Power\n6. Trigonometric Functions\n");
@@ -152,5 +152,28 @@ void complex_maths()
 }
 void trigonometry()
 {
-	printf("Hello World\n");
+	int trigon;
+	double angle;
+
+	puts("                  ................Tigonometric Functions..........................................");
+	puts("..................................................................................................");
+	sleep(0.5);
+	printf("1. Sin\n2. Cos\n3. Tan\n");
+	printf("Enter a trigonometric Function to use: ");
+	scanf("%d", &trigon);
+	printf("Enter an angle: ");
+	scanf("%lf", &angle);
+	switch(trigon)
+	{
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		default:
+			printf("Invalid Choice!");
+			break;
+	}
+
 }
