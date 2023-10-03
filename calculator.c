@@ -150,6 +150,7 @@ void complex_maths()
 			break;
 	}
 }
+
 void trigonometry()
 {
 	int trigon;
