@@ -33,4 +33,3 @@ int main()
 	printf("\t\tYour ethnicity is %s\n\n", ethnicity);
 	return 0;
 }
-	
