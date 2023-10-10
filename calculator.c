@@ -153,7 +153,7 @@ void complex_maths()
 
 void trigonometry()
 {
-	int trigon;
+	int trigonom;
 	double angle;
 
 	puts("                  ................Tigonometric Functions..........................................");
@@ -161,10 +161,10 @@ void trigonometry()
 	sleep(0.5);
 	printf("1. Sin\n2. Cos\n3. Tan\n");
 	printf("Enter a trigonometric Function to use: ");
-	scanf("%d", &trigon);
+	scanf("%d", &trigonom);
 	printf("Enter an angle: ");
 	scanf("%lf", &angle);
-	switch(trigon)
+	switch(trigonom)
 	{
 		case 1:
 			break;
