@@ -2,12 +2,9 @@
 
 int main()
 {
-        int x, y;
-
-        printf("Enter x: ");
-        scanf("%d", &x);
-        printf("Enter y: ");
-        scanf("%d", &y);
+        int x = 6;
+        int y = 5;
+        //x & y =
 
         printf("BITWISE AND: %d\n", x & y);   //Bitwise AND
         printf("BITWISE OR: %d\n", x | y);    //Bitwise OR

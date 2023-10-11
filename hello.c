@@ -1,16 +1,6 @@
 #include <stdio.h>
-#include <math.h>
 
-int main(void)
-{
-    float A;
-    float B;
-    float C;
-    printf("Height: ");
-    scanf("%f", &A);
-    printf("Base: ");
-    scanf("%f", &B);
-    C = sqrt(A*A + B*B);
-    printf("Hypotenuse: %.2 f", C);
-    return 0;
-}
+float sum(float num1, float num2){return (num1 + num2);}
+float sub(float num1, float num2){return (num1 - num2);}
+float product(float num1, float num2){return (num1 * num2);}
+float divide(float num1, float num2){return (num1 / num2);}
